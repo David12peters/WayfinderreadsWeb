@@ -1,1 +1,146 @@
-<form action="https://formsubmit.co/7ed3984aa7ffc97fca936e8de8467d48" method="POST">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayfinderReads - Inspiring Christian Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .content {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .categories {
+            margin: 40px 0;
+        }
+        .categories h2 {
+            color: #0044cc;
+        }
+        .category-list {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .category {
+            background: #ffcc00;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .contact-form, .newsletter {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>WayfinderReads</h1>
+        <p>Love Christian books? Look no further! Explore inspiring, mind-captivating Christian gospel books.</p>
+        <a href="https://wayfinder-reads.vercel.app" class="btn">Explore Now</a>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="card">
+                <h2>Inspiring Reads</h2>
+                <p>Discover books that uplift your spirit and strengthen your faith.</p>
+            </div>
+            <div class="card">
+                <h2>Gospel Truths</h2>
+                <p>Dive into the Word with books that illuminate the Gospel.</p>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Book Categories</h2>
+            <div class="category-list">
+                <span class="category">Faith & Devotion</span>
+                <span class="category">Christian Living</span>
+                <span class="category">Bible Studies</span>
+                <span class="category">Inspirational</span>
+                <span class="category">Spiritual Growth</span>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="https://formsubmit.co/wayfinder728@gmail.com" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated on the latest Christian books and insights.</p>
+            <form action="https://formsubmit.co/wayfinder728@gmail.com" method="POST">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        &copy; <span id="year"></span> WayfinderReads. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
